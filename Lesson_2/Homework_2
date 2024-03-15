@@ -1,0 +1,20 @@
+# трикутник
+k1 = 100
+k2 = 800
+square = k1 * k2 / 2
+print(square)
+
+
+# школяри
+n = 5
+k = 9
+whole = k / n
+trash = k % n
+print(int(whole))
+print(trash)
+
+# - 567 +
+a = 567
+b = a - 1
+c = a + 1
+print(b, c)
