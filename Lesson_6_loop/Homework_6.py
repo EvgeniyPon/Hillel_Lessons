@@ -9,25 +9,21 @@ print(result)
 
 
 # Task_2 sequence in the list
-my_list = [1, 2, 3, 4, 6, 7, 8]
-index_of_list = 0
-result = list()
-first_num = my_list[index_of_list]
-next_num = my_list[index_of_list + 1]
-while next_num == first_num + 1:
-    index_of_list += 1
-    first_num = my_list[index_of_list]
-    next_num = my_list[index_of_list + 1]
-    if next_num != first_num + 1: 
-        result.append(next_num)
-print(f'First unsequenced number is {result[0]}')
-
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]
+for i in range(1, len(my_list)):
+    if my_list[i-1] + 1 != my_list[i]:
+        print(f'First unsequenced number is {my_list[i]}')
+        break    
+    if i + 1 == len(my_list):
+        print('This list is sequenced!')
+        
 
 # Task_3 cycle pyramid
 for i in range(1, 6):
     for j in range(1, i + 1):
         print(j, end=" ")
     print() 
+
 
 
 
