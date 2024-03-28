@@ -17,14 +17,12 @@ print(f'mismatch in list_1 compare with list_2 is {difference_set_1}')
 #Task_3 unique element in list
 import random
 random_list = []
-for i in range(1, 20):
-    i = random.randint(1, 1000)
-    random_list.append(i)
-    list_set = set(random_list)
-if len(random_list) == len(list_set):
-    print(f'the list contains only unique items \nList = {random_list} \nSet = {list_set}')
+for _ in range(1, 20):
+    random_list.append(random.randint(1, 1000))
+if len(random_list) == len(set(random_list)):
+    print(f'the list contains only unique items \nList = {random_list} \nSet = {set(random_list)}')
 else:
-    print(f'some list items are duplicated \nList = {random_list} \nSet = {list_set}')
+    print(f'some list items are duplicated \nList = {random_list} \nSet = {set(random_list)}')
 
 # Task_4  minimum value in list
 elements = [1, 5, 68, 0]
