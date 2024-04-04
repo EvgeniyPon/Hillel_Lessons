@@ -2,8 +2,8 @@ import os
 import csv
 
 # Task_1 copy from file
-new_txt_file = '../Lessons/Lesson_9_files/file_2.txt'
-with open('../Lessons/Lesson_9_files/file_1.txt', 'r', encoding='utf-8') as file_from:       
+new_txt_file = '/Users/a123/PycharmProjects/Hillel_Lessons/Lesson_9_files/file_2.txt'
+with open('/Users/a123/PycharmProjects/Hillel_Lessons/Lesson_9_files/file_1.txt', 'r', encoding='utf-8') as file_from:
     with open(new_txt_file, 'w+', encoding='utf-8') as file_into:
         print(f'at this moment second file is empty - {file_into.read()}')
         file_into.seek(0)
@@ -12,9 +12,9 @@ with open('../Lessons/Lesson_9_files/file_1.txt', 'r', encoding='utf-8') as file
         print(f'and now file is filled with data - {file_into.read()}')
 
 # Task_2 csv files
-with open('../Lessons/Lesson_9_files/names.csv', 'r', newline='', encoding='utf-8') as names:
+with open('/Users/a123/PycharmProjects/Hillel_Lessons/Lesson_9_files/names.csv', 'r', newline='', encoding='utf-8') as names:
     csv_reader = csv.DictReader(names)
-    new_csv_file = '../Lessons/Lesson_9_files/emails.csv'
+    new_csv_file = '/Users/a123/PycharmProjects/Hillel_Lessons/Lesson_9_files/emails.csv'
     with open(new_csv_file, 'w', newline='', encoding='utf-8') as emails:
         csv_writer = csv.DictWriter(emails, fieldnames=['email'])
         csv_writer.writeheader()
