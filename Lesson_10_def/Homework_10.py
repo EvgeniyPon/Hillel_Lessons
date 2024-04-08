@@ -51,10 +51,6 @@ while play:
     else:
         print(f'the {num} is not a prime number')
     request = input('Do you want check one more time? yes (y) or no (n) ')
-    try:
-        request == 'y'
-    except UnboundLocalError:
-        print(f'{result} is a not correct input')
     def again(request):
         if request.lower() == 'y':
             play = True
