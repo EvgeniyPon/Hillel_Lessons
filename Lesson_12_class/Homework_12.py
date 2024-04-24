@@ -17,6 +17,7 @@ from my_min import *
 if __name__ == '__main__':
     nums = input('Enter numbers separated by spaces: ').split()
     nums = list(nums)
+    print(nums)
     max_value = my_max(*nums)
     min_value = my_min(*nums)
     print(f'MAX = {max_value}')
